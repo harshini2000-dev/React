@@ -1,7 +1,7 @@
 import {React,useState} from 'react'
 
 
-// No HOOKS used. To demo the Problem this program is written.
+// No useEffect hook is used in this. To demo a Problem, this program is written.
 export default function DigitalClock() {
     let [timer,setTimer] = useState("")
 
@@ -14,9 +14,12 @@ export default function DigitalClock() {
     
   return (
     <>
-        <div>DigitalClock</div>
+        <h1>DigitalClock</h1>
         <h1>{timer}</h1>
-        <small>Each time new interval is set. new timer is being created.</small>
+        <small>Each time new interval is set. new timer is being created.<br/>
+        You can check in console.log. This is the problem. for this useEffect is needed.
+        Shown in DigitalClock_hook.js
+       </small>
     </>
   )
 }
